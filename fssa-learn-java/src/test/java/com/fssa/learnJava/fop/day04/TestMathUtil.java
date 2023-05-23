@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class TestMathUtil {
+public class TestMathUtil {
 	
 	@Test
 	public void testIsEven()
