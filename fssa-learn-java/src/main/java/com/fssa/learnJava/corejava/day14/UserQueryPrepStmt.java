@@ -11,13 +11,14 @@ import com.fssa.learnJava.corejava.day13.ConnectionUtil;
  * @author BharathwajSoundarara
  *
  */
+//Explain in class what is the difference between Statement and PreparedStatement 
 public class UserQueryPrepStmt {
 	public static void main(String[] args) throws Exception{
 		Connection connection = ConnectionUtil.getConnection();
 		String query ="INSERT INTO USERS (user_name, email_id, additional_info, password) VALUES ( ?, ?, ? ,? );";
 		PreparedStatement pst = connection.prepareStatement(query);
-		pst.setString(1, "surya_coach");
-		pst.setString(2, "surya@freshworks.com");
+		pst.setString(1, "bharathwaj");
+		pst.setString(2, "bharathwaj.soundararajan@ctr.freshworks.com");
 		pst.setString(3, "Coach");
 		pst.setString(4, "password007");
 		System.out.println(pst.toString());
