@@ -5,7 +5,7 @@ public class Rectangle implements Polygon {
 	@Override
 	public double area(double a, double b) {
 		// TODO Auto-generated method stub
-		return 0;
+		return a*b;
 	}
 
 }
