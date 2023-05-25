@@ -5,6 +5,8 @@ package com.fssa.learnJava.corejava.day14;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 import com.fssa.learnJava.corejava.day13.ConnectionUtil;
 
 /**
@@ -24,5 +26,8 @@ public class UserQueryPrepStmt {
 		System.out.println(pst.toString());
 		int rows2 = pst.executeUpdate();
 		System.out.println("No of rows inserted :" + rows2 );
+		pst.close();
+	
 	}
+	
 }

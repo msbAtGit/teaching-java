@@ -40,7 +40,6 @@ public class UserQuery {
         	int userId = rs.getInt("user_id");            
         	String userName = rs.getString("user_name");
             String emailID = rs.getString("email_id");
-            String additionalInfo = rs.getString("additional_info");
              
             System.out.println("UserId:" + userId +", UserName:" + userName + ", EMAIL ID:" + emailID);
         }

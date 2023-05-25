@@ -5,7 +5,6 @@ package com.fssa.learnJava.corejava.day14;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 import com.fssa.learnJava.corejava.day13.ConnectionUtil;
 
@@ -33,7 +32,6 @@ public class TestUserUpdatePassword {
 	 
 	        int rows = pst.executeUpdate();
 	        System.out.println("No of rows updated" + rows);
-	 
 	    }
 	 
 	
