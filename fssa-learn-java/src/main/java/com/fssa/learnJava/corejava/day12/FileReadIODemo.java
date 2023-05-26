@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.fssa.learnJava.corejava.day10;
+package com.fssa.learnJava.corejava.day12;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
