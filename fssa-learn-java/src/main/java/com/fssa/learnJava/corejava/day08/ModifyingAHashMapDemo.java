@@ -1,15 +1,8 @@
-/**
- * 
- */
 package com.fssa.learnJava.corejava.day08;
 
 import java.util.HashMap;
 
-/**
- * @author BharathwajSoundarara
- *
- */
-public class HashMapDemo {
+public class ModifyingAHashMapDemo {
 	public static void main(String[] args) {
 
 		// Task: store department name and no of employees working in the department
@@ -18,6 +11,12 @@ public class HashMapDemo {
 		marksMap.put("ADMIN", 10);
 		marksMap.put("DEVELOPERS", 300);
 
+
+		// Modifying a particular count
+		int hrCount = marksMap.get("HR");
+		hrCount += 1;
+		marksMap.put("HR", hrCount);
+
 		// Iterate
 		for (String deptName : marksMap.keySet()) {
 
@@ -25,7 +24,5 @@ public class HashMapDemo {
 			System.out.println("Department Name:" + deptName + " and Employee Count :" + count);
 
 		}
-
 	}
-
 }
