@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.fssa.learnJava.fop.day01;
+package com.fssa.fop.day01.solved;
 
 /**
  * @author BharathwajSoundarara
  *
  */
-public class HelloWorld {
+public class FirstJavaProg {
 
 	/**
 	 * @param args
