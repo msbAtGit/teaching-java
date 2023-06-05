@@ -25,6 +25,20 @@ public class DataTypeConversion {
 		double doubleNum = Double.parseDouble(doubleNumStr);
 		System.out.println(doubleNum + 1.2);
 		
+		//Converting String to Boolean
+		String boolStr = "true";
+		boolean bool = Boolean.parseBoolean(boolStr);
+		System.out.println(bool);
+		
+		//Converting an integer into string;
+		
+		String numStr2 = ""+ num;
+		
+		//Implicit conversion
+		
+		char name = 65;
+		System.out.println(name);
+		
 		
 		
 	}
