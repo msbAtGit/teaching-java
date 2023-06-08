@@ -1,4 +1,4 @@
-use fssa_hacker;
+use corejava_demoapp_bharath;
 
 
 create table users (
@@ -10,29 +10,30 @@ create table users (
 );
 
 
-
-DELETE FROM users WHERE user_id >= 1;
-ALTER TABLE users
-ADD CONSTRAINT UC_users UNIQUE (user_name);
-
-
-SELECT user_name, email_id, additional_info FROM users WHERE user_name = 'bharath_sound';
-
-SELECT * FROM users;
-
-INSERT INTO USERS (user_name, email_id, additional_info, password) VALUES ("bharath_sound","bharathwaj.soundararajan@gmail.com","Instructor FSSA", "password007");
-
-INSERT INTO USERS (user_name, email_id, additional_info, password) VALUES ( 'surya_coach', 'surya@freshworks.com', 'Coach' ,'password007' );
-create table students (
+create table tasks (
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    task_name varchar(500) NOT NULL,
+	task_status enum('PENDING','STARTED', 'COMPLETED', 'INPROGRESS','BLOCKED'),
+    task_priority enum('HIGH', 'MEDIUM', 'LOW'),
+    createDate date,
+    estdHrs numeric
+    
 );
 
-create table content_creators (
-);
+INSERT INTO users (user_name, email_id, additional_info, password) VALUES ("bharath_sound","bharathwaj.soundararajan@gmail.com","Instructor FSSA", "password007");
 
-create table assignments (
-);
-
-
-INSERT INTO USERS (user_name, email_id, additional_info, password) VALUES ( 'surya_coach', 'surya@freshworks.com', 'Coach' ,'password007' );
+INSERT INTO tasks(task_name, task_status, task_priority, createDate, estdHrs) 
+VALUES ("Adding Task Feature to project", 'PENDING', 'HIGH', '20230608' , 8.5);
 
 
+INSERT INTO tasks(task_name, task_status, task_priority, createDate, estdHrs) 
+VALUES ("Incorporating code review comments", 'PENDING', 'HIGH', '20230608' , 3);
+
+
+
+ALTER TABLE tasks modify column estdHrs DOUBLE NOT NULL;
+
+SELECT * FROM tasks WHERE estdHrs = 8.5
+
+
+SELECT * FROM tasks WHERE estdHrs = 3

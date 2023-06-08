@@ -10,7 +10,7 @@ public class TestMathUtil {
 	@Test
 	public void testIsEven()
 	{
-		Assertions.assertFalse(MathUtil.isEven(3));
+		Assertions.assertFalse(MathUtilDemo.isEven(3));
 	}
 
 }

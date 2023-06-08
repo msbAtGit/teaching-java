@@ -16,5 +16,7 @@ public class StringEqualityCheckDemo {
 		
 		// Figure out why the second line is coming as false 
 		// where as the first line is true
-	}
+		System.out.println(s1.toLowerCase());
+		System.out.println("Original String: " + s1);
+	}	
 }

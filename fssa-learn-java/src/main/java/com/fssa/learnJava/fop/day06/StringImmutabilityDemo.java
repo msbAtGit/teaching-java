@@ -20,6 +20,10 @@ public class StringImmutabilityDemo {
 	public static void main(String[] args) {
 		// Declaring a string
 		String originalString = "Hello";
+		String anotherString = originalString;
+		originalString = new String("Hello"); //Assigning the reference to "Hell" String from memory
+		
+		System.out.println(originalString.equals(anotherString));
 		System.out.println("Original String: " + originalString);
 
 		// Concatenating another String to the Original String
