@@ -9,13 +9,14 @@ package com.fssa.learnJava.fop.day07;
  * @author BharathwajSoundarara
  *
  */
-public class UnreachableCodeDemo {
+public class WrongConditionalsUsage {
 	public static void main(String[] args) {
 		int hourOfDay = 10;
+		// Can you find what's wrong here?
 		if (hourOfDay < 15) {
 			System.out.println("Good Afternoon");
 		} else if (hourOfDay < 11) {
-			System.out.println("Good Morning"); // UNREACHABLE CODE
+			System.out.println("Good Morning"); 
 		} else {
 			System.out.println("Good Evening");
 		}

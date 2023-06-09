@@ -4,7 +4,7 @@ public class ConditionalStatementDemo4 {
 
 	public static void main(String[] args) {
 
-		int day = 4;
+		int day = 5;
 
 		switch (day) {
 		case 1:

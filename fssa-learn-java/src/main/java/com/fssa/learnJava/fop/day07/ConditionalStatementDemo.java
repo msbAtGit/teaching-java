@@ -15,6 +15,7 @@ public class ConditionalStatementDemo {
     
       if ( marks >= 75 ) {
           System.out.println("You got an A grade");
+          //More than one statement you need {}
       }
       
 	}

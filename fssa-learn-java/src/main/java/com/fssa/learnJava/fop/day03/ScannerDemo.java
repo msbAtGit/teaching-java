@@ -22,6 +22,11 @@ public class ScannerDemo {
 		System.out.println("In a line Tell me more about yourself: ");
 		String aboutUrSelf = s.nextLine();
 		System.out.println("What you have typed: " + aboutUrSelf);
+		
+		System.out.println("Reading a character:");
+		String charReadStr = s.nextLine();
+		char charRead = charReadStr.charAt(0);
+		System.out.println("Character Read: " + charRead);
 		         
 		s.close();
 		
