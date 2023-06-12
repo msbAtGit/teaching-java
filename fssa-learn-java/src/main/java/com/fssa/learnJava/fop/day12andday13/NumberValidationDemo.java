@@ -1,4 +1,4 @@
-package com.fssa.learnJava.fop.day12_13;
+package com.fssa.learnJava.fop.day12andday13;
 
 public class NumberValidationDemo {
 
