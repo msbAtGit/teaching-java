@@ -5,8 +5,8 @@ public class ConditionalStatementDemo4 {
 	public static void main(String[] args) {
 
 		int day = 5;
-
-		switch (day) {
+//hello
+		switch(day) {
 		case 1:
 			System.out.println("Today is Monday");
 			break;
