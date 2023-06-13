@@ -12,7 +12,7 @@ public class StringArrayDemo {
 	public static void main(String[] args) {
 
 		// Array with a length of 3
-		String[] names = new String[3];
+		String[] names = new String[0];
 
 		// assign marks in the array
 		names[0] = "Surya";

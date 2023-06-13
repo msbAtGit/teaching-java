@@ -13,18 +13,18 @@ public class ArrayDemo {
 		int[] marks = new int[3];
 		
 		// Another way to declare array
-//		int[] marks2 = {90, 10, 33};
+		int[] marks2 = {90, 10, 33};
 		
 		// assign marks in the array
-		marks[0] = 50;
-		marks[1] = 60;
-		marks[2] = 70;
+		marks2[0] = 50;
+		marks2[1] = 60;
+		marks2[2] = 70;
 		
 	
 
     
 		// find how many items in the array
-    System.out.println("Array size is: " + marks.length);
+    System.out.println("Array size is: " + marks2.length);
 		
 	
 		// Iterate array using for loop

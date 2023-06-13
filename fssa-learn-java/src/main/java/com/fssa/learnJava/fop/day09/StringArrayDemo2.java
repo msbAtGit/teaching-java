@@ -27,7 +27,7 @@ public class StringArrayDemo2 {
 			String name = names[i];
 			System.out.println("Name is: " + name);
 		
-			if(  name.trim().equals("Vijay") ) {
+			if(  name.trim().equals("vijay") ) {
 				System.out.println("Match found");
 				break;
 			}

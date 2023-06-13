@@ -18,7 +18,7 @@ public class ArrayExceptionDemo {
 		// 2
 		// int[] markss = new int[] { 50, 60, 70 };
 
-
+		marks[7987] = 0;
 
 		// 3
 		// int[] marksss = { 50, 60, 70 };
@@ -29,7 +29,7 @@ public class ArrayExceptionDemo {
 			int m = marks[i];
 			System.out.println("Mark is: " + m);
 		}
-
+		
 	}
 
 }
