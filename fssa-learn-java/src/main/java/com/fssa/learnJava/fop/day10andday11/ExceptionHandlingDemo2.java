@@ -17,6 +17,7 @@ public class ExceptionHandlingDemo2 {
 
 			LocalDate parsedDate = LocalDate.parse(dateStr, formatter);
 			System.out.println(parsedDate);
+			
 
 		} catch (Exception e) {
 

@@ -27,15 +27,15 @@ public class IllegalArgumentExceptionPracticeCode {
 
 		String username = "n";
 
-		try {
+//		try {
 			UserAccount.validateUsername(username);
 			// insert into users(username) values (?);
 			// sendmail
 			// sendsms
-		} catch ( e) { // Fix the compiler Errors as well
-			System.out.println(e.getMessage());
-			e.printStackTrace();
-		}
+//		} catch ( e) { // Fix the compiler Errors as well
+//			System.out.println(e.getMessage());
+//			e.printStackTrace();
+//		}
 
 	}
 
