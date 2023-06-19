@@ -20,7 +20,6 @@ public class DateDemo3 {
 		System.out.println(parsedDate.getMonth());
 		System.out.println(parsedDate.getMonthValue());
 		System.out.println(parsedDate.getDayOfMonth());
-
 	}
 
 }
