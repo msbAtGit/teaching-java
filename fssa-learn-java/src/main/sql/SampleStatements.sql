@@ -37,3 +37,33 @@ SELECT * FROM tasks WHERE estdHrs = 8.5
 
 
 SELECT * FROM tasks WHERE estdHrs = 3
+
+ALTER TABLE tasks MODIFY COLUMN task_priority varchar(20);
+ 
+ ALTER TABLE tasks MODIFY COLUMN task_status varchar(20);
+ 
+ 
+ ALTER TABLE tasks 
+ 
+ ADD CONSTRAINT CHK_Task_statis CHECK (task_status in ('PENDING','STARTED','COMPLETED','INPROGRESS','BLOCKED'));
+ 
+ 
+ ALTER TABLE tasks 
+ 
+ ADD CONSTRAINT CHK_Ttask_priority CHECK (task_priority in ('HIGH','MEDIUM','LOW'));
+ 
+ ALTER TABLE tasks
+ADD COLUMN user_Id int; 
+
+SELECT * FROM tasks ;
+
+UPDATE tasks SET user_id = 1 WHERE user_id IS NULL;
+
+SELECT * FROM users; 
+ALTER TABLE tasks 
+ADD CONSTRAINT foreign_key_user_task FOREIGN KEY (user_id) REFERENCES users(user_id);
+
+SELECT * FROM users;
+
+SELECT * FROM tasks;
+

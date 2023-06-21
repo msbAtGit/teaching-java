@@ -15,7 +15,7 @@ public class StringBufferDemo {
 		String firstName = "Sachin";
 		String lastName = " Tendulkar";
 
-		StringBuilder fullName = new StringBuilder();
+		StringBuffer fullName = new StringBuffer();
 		fullName.append(firstName);
 		fullName.append(" ");
 		fullName.append(lastName);

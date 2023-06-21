@@ -9,7 +9,7 @@ public class StringBuilderDemo {
       String firstName = "Virat ";
       String lastName = "Kohli";
       
-      StringBuffer fullName = new StringBuffer();
+      StringBuilder fullName = new StringBuilder();
       fullName.append(firstName).append(" ").append(lastName);
       
       System.out.println(fullName);

@@ -11,7 +11,7 @@ public class DateDemo2 {
 		LocalDate today = LocalDate.now();
 
 		// Expected format
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yy");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MMM/yyyy");
 
 		// Converting date to the format
 		String formattedDate = today.format(formatter);

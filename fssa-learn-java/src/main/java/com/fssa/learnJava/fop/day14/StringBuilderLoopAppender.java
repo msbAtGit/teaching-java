@@ -11,22 +11,23 @@ public class StringBuilderLoopAppender {
 
 		// Program to demonstrate creating a String
 		// Appending a array of Strings
-		String[] strArr = { "This", "is", "a", "collection", "of", "words", "to",
-				"be", "appended", "to", "form", "a", "Sentence" };
-		
-		// Without String Builder
+		String[] strArr = { "This", "is", "a", "collection", "of", "words",
+				"to", "be", "appended", "to", "form", "a", "Sentence" };
+
+		// Without String Builder : BAD Practice
 		String newStrFromSent = "";
-		for (String str: strArr ) {
+		for (String str : strArr) {
 			// We are creating a new String everytime we do this
-			newStrFromSent +=  str + " ";
+			newStrFromSent += str + " ";
 		}
 		System.out.println(newStrFromSent.trim());
 		
-		// GOOD Practice: With String Builder 
-		
+
+		// GOOD Practice: With String Builder
+
 		StringBuilder strBuilderFromSent = new StringBuilder();
-		
-		for (String str: strArr) {
+
+		for (String str : strArr) {
 			// Just appending to an already existing object
 			strBuilderFromSent.append(str);
 			strBuilderFromSent.append(" ");
