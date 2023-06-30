@@ -21,6 +21,12 @@ public class StringCompareDemo {
 		System.out.println("\nComparing with .trim()");
 		System.out.println(name1.trim() == name2.trim());
 		System.out.println(name1.trim().equals(name2.trim()));
+		
+		// Lexical Comparison
+		String str1 = "dravind";
+		String str2 = "Bharath";
+		
+		System.out.println(str1.compareTo(str2));
 	}
 
 }
