@@ -16,5 +16,9 @@ public class ConvertArraytoList {
 		deptNames[2] = "MECH";
 		List<String> list = Arrays.asList(deptNames);
 		System.out.println(list);
+		
+		for (String dept : list) {
+			System.out.println(dept);
+		}
 	}
 }
