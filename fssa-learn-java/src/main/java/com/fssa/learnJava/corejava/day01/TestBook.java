@@ -5,10 +5,10 @@ package com.fssa.learnJava.corejava.day01;
  * @author BharathwajSoundarara
  *
  */
-class Book {
+class Book1 {
 	public String title;
 	public String author;
-	private double price;
+	public double price;
 	String publisher;
 	
 	
@@ -23,7 +23,7 @@ class Book {
 
 public class TestBook {
 	public static void main(String[] args) {
-		Book book1 = new Book();
+		Book1 book1 = new Book1();
 		
 		book1.title = "Harry Potter";
 		book1.author = "JK Rowling";
@@ -32,7 +32,7 @@ public class TestBook {
 		System.out.println("------------Book1 Details---------");
 		book1.printBookDetails();
 		
-		Book book2 = new Book();
+		Book1 book2 = new Book1();
 		
 		book2.title = "Lord of the Rings";
 		book2.author = "JRR Tolkien";

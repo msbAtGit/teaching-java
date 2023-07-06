@@ -1,11 +1,12 @@
 package com.fssa.learnJava.corejava.day06;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListCrud {
 	public static void main(String[] args) {
 		// Store the city names in the List
-		ArrayList<String> cityList = new ArrayList<String>();
+		List<String> cityList = new ArrayList<String>();
 		cityList.add("Chennai");
 		cityList.add("Bangalore");
 		cityList.add("Mumbai");

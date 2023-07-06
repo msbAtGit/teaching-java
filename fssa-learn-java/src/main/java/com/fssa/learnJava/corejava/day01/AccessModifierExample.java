@@ -1,6 +1,5 @@
 package com.fssa.learnJava.corejava.day01;
 
-package com.fssa.learnJava.corejava.day01;
 
 /**
  * Solved Example for day 1

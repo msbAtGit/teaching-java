@@ -25,6 +25,7 @@ public class ResuableTestConnection {
          
         } catch (Exception e) {         
             e.printStackTrace();
+            throw new RuntimeException("Unable to connect to the database");
         }
         return connection;
     }

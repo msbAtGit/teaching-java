@@ -3,7 +3,7 @@ package com.fssa.learnJava.corejava.day01;
 
 /**
  * In the real world, you'll often find many individual objects all of the same
- * kind. There may be thousands of other bicycles in existence, all of the same
+ * kind. There may be thousands of other cars in existence, all of the same
  * make and model. Each car was built from the same set of blueprints and
  * therefore contains the same components. In object-oriented terms, we say that
  * your Car is an instance of the class of objects known as Cars. A
@@ -14,8 +14,8 @@ package com.fssa.learnJava.corejava.day01;
  */
 class Car {
 
-	public int speed = 0;
-	public int gear = 1;
+	private int speed = 0;
+	private int gear = 1;
 
 	public void changeGear(int newValue) {
 		gear = newValue;
@@ -55,7 +55,7 @@ public class CarDemo {
 
 		Car car2 = new Car();
 
-		car2.speedUp(10);
+		car2.speedUp(5);
 		car2.changeGear(2);
 		car2.speedUp(10);
 		car2.changeGear(3);

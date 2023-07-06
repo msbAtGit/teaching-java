@@ -11,19 +11,19 @@ import java.util.HashSet;
  *
  */
 
-class Emp {
+class Employee {
 
-	int i;
+	int id;
 
-	public Emp(int i) {
-		this.i = i;
+	public Employee(int id) {
+		this.id = id;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + i;
+		result = prime * result + id;
 		return result;
 	}
 
@@ -35,8 +35,8 @@ class Emp {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Emp other = (Emp) obj;
-		if (i != other.i)
+		Employee other = (Employee) obj;
+		if (id != other.id)
 			return false;
 		return true;
 	}
@@ -51,27 +51,27 @@ public class HashCodeEqualsDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-        Emp emp1 = new Emp(23);
-        Emp emp2 = new Emp(23);
+        Employee emp1 = new Employee(23);
+        Employee emp2 = new Employee(23);
  
         System.out.println("emp1.equals(emp2)--->>>" + emp1.hashCode());
         System.out.println("emp1.equals(emp2)--->>>" + emp2.hashCode());
         System.out.println("emp1.equals(emp2)--->>>" + emp1.equals(emp2));
  
-        ArrayList<Emp> list = new ArrayList<Emp>();
-        list.add(emp1);
-        list.add(emp2);
-        System.out.println("ArrayList size:" + list.size());
+        ArrayList<Employee> empList = new ArrayList<Employee>();
+        empList.add(emp1);
+        empList.add(emp2);
+        System.out.println("ArrayList size:" + empList.size());
  
-        HashSet<Emp> set = new HashSet<>();
-        set.add(emp1);
-        set.add(emp2);
+        HashSet<Employee> setOfEmps = new HashSet<>();
+        setOfEmps.add(emp1);
+        setOfEmps.add(emp2);
  
-        for (Emp emp : set) {
+        for (Employee emp : setOfEmps) {
             System.out.println(emp);
         }
  
-        System.out.println("HashSet size:" + set.size());
+        System.out.println("HashSet size:" + setOfEmps.size());
  
 	}
 
