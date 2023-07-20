@@ -9,16 +9,17 @@ public class TestArrayList {
     	
     	
         // Store the city names in the List
-        ArrayList cityList  = new ArrayList();
+        ArrayList<String> cityList  = new ArrayList<String>();
         cityList.add("Chennai");
         cityList.add("Bangalore");
         cityList.add("Mumbai");
+        cityList.add("9");
         
         
         
         // Display the city names
-        for (Object object : cityList) {
-            String cityName = (String) object; // TypeCast object to String
+        for (String cityName : cityList) {
+//            String cityName = (String) object; // TypeCast object to String
             System.out.println(cityName);           
         }
  

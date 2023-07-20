@@ -6,13 +6,13 @@ import java.util.Collections;
 public class SortingInReverseOrderDemo {
 	public static void main(String[] args) {
 		ArrayList<String> deptNames = new ArrayList<String>();
-		deptNames.add("B");
+		deptNames.add("b");
 		deptNames.add("D");
 		deptNames.add("A");
 		deptNames.add("C");
 		 
 		System.out.println("Before Sorting: " + deptNames);
-		Collections.sort(deptNames);
+		Collections.sort(deptNames, String::compareToIgnoreCase);
 		System.out.println("After Sorting: " + deptNames);
 		 
 		Collections.reverse(deptNames);

@@ -12,6 +12,12 @@ class Account2 {
 	public Account2() {
 
 	}
+	
+	public Account2(String accNo, String name ) {
+		this.accNo = accNo;
+		this.name = name;
+		this.balance = 500;
+	}
 
 	// Creating a Constructor which accepts all the attributes: Constructor
 	// Overloading
@@ -51,10 +57,10 @@ public class TestAccount2 {
 	public static void main(String[] args) {
 
 		// create Account using Setter methods and Default constructor
-		Account3 acct1 = new Account3();
+		Account2 acct1 = new Account2();
 		acct1.setAccNo("A101");
-		acct1.setName("Naresh");
-		acct1.setBalance(1000);
+//		acct1.setName("Naresh");
+//		acct1.setBalance(1000);
 
 		System.out.println(acct1.getAccNo() + "-" + acct1.getName() + "-"
 				+ acct1.getBalance());

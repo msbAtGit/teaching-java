@@ -14,4 +14,6 @@ public abstract class Polygon {
 	
 	
 	public abstract double calculateArea();
+	
+	public abstract void colorIt();
 }

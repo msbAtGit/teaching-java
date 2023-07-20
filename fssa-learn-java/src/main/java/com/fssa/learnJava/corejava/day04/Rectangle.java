@@ -23,8 +23,13 @@ public class Rectangle extends Polygon {
 
 	@Override
 	public double calculateArea() {
-		// TODO Auto-generated method stub
+		System.out.println("Calling rectangle area calc");
 		return this.length * this.breadth;
+	}
+	
+	@Override
+	public void colorIt() {
+		System.out.println("Coloring a rectangle");
 	}
 	
 	public int getNumberOfSides() {

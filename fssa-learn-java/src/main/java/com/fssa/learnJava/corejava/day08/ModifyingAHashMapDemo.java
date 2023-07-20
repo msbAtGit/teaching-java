@@ -24,5 +24,12 @@ public class ModifyingAHashMapDemo {
 			System.out.println("Department Name:" + deptName + " and Employee Count :" + count);
 
 		}
+		
+		marksMap.remove("HR");
+		System.out.println(marksMap);
+		marksMap.clear();
+		System.out.println(marksMap);
+		marksMap.clear();
+		
 	}
 }
